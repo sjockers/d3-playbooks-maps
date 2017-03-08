@@ -2,7 +2,7 @@
   "name": "d3-playbooks",
   "version": "0.0.1",
   "description": "A simple wrapper around d3v4, extended with some stuff",
-  "main": "webpack.config.js",
+  "main": "dist/d3-playbooks.maps.min.js",
   "scripts": {
     "build": "webpack --config webpack-prod.config.js --colors",
     "dev": "webpack-dev-server --config webpack-dev.config.js --watch --colors"
