@@ -4,6 +4,8 @@
  *  a callable - will just return as is
  *  an Array, this will compute a d3 scaleQuantile
 **/
+import * as d3 from 'd3'
+
 export default ({
   color,
   yDomain

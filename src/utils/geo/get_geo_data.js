@@ -1,3 +1,4 @@
+import * as d3 from 'd3'
 import Promise from 'promise-polyfill'
 
 export default ({

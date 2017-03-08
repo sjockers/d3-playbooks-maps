@@ -1,3 +1,4 @@
+import * as d3 from 'd3'
 import './style/main.scss'
 import './public.js'
 import renderExamples from './examples.js'

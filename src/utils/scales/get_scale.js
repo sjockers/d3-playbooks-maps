@@ -1,3 +1,4 @@
+import * as d3 from 'd3'
 // const {scaleLinear, scaleOrdinal, scaleBand, scaleTime, scaleLog} = d3
 const scales = {
   scaleLinear: d3.scaleLinear,

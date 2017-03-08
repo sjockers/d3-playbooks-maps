@@ -5,6 +5,8 @@
  * @param {string} elementId - id of html element
  * @param {string} cssNamespace
  **/
+import * as d3 from 'd3'
+
 export default ({
   elementId,
   cssNamespace

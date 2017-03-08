@@ -1,3 +1,4 @@
+import * as d3 from 'd3'
 import setupPlaybook from './playbooks/generate.js'
 
 export default ({opts, template, plays}) => {

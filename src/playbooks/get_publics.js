@@ -1,3 +1,5 @@
+import * as d3 from 'd3'
+
 // playbook functions that should be public on the returned chart instance
 const publics = ['render', 'resize', 'update']
 

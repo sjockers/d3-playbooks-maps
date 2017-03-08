@@ -46,15 +46,21 @@
 
 	'use strict';
 	
-	__webpack_require__(43);
+	var _d = __webpack_require__(1);
 	
-	__webpack_require__(11);
+	var d3 = _interopRequireWildcard(_d);
 	
-	var _examples = __webpack_require__(3);
+	__webpack_require__(44);
+	
+	__webpack_require__(12);
+	
+	var _examples = __webpack_require__(4);
 	
 	var _examples2 = _interopRequireDefault(_examples);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	if (false) {
 	  window.d3 = d3;
@@ -63,6 +69,12 @@
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+	module.exports = d3;
+
+/***/ },
+/* 2 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -84,7 +96,7 @@
 	};
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(setImmediate) {(function (root) {
@@ -321,11 +333,11 @@
 	
 	})(this);
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(44).setImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(45).setImmediate))
 
 /***/ },
-/* 3 */
-/***/ function(module, exports) {
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -334,6 +346,12 @@
 	});
 	
 	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+	
+	var _d2 = __webpack_require__(1);
+	
+	var d3 = _interopRequireWildcard(_d2);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	// render example map
 	exports.default = function () {
@@ -423,7 +441,7 @@
 	};
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -432,11 +450,17 @@
 	  value: true
 	});
 	
-	var _generate = __webpack_require__(5);
+	var _d = __webpack_require__(1);
+	
+	var d3 = _interopRequireWildcard(_d);
+	
+	var _generate = __webpack_require__(6);
 	
 	var _generate2 = _interopRequireDefault(_generate);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	exports.default = function (_ref) {
 	  var opts = _ref.opts,
@@ -503,7 +527,7 @@
 	};
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -544,22 +568,6 @@
 	};
 
 /***/ },
-/* 6 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	// playbook functions that should be public on the returned chart instance
-	var publics = ['render', 'resize', 'update'];
-	
-	exports.default = function () {
-	  return d3.playbooks.PUBLIC_METHODS || publics;
-	};
-
-/***/ },
 /* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -569,19 +577,17 @@
 	  value: true
 	});
 	
-	var _base_map = __webpack_require__(8);
+	var _d = __webpack_require__(1);
 	
-	var _base_map2 = _interopRequireDefault(_base_map);
+	var d3 = _interopRequireWildcard(_d);
 	
-	var _choropleth_map = __webpack_require__(9);
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
-	var _choropleth_map2 = _interopRequireDefault(_choropleth_map);
+	// playbook functions that should be public on the returned chart instance
+	var publics = ['render', 'resize', 'update'];
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = {
-	  baseMap: _base_map2.default,
-	  choroplethMap: _choropleth_map2.default
+	exports.default = function () {
+	  return d3.playbooks.PUBLIC_METHODS || publics;
 	};
 
 /***/ },
@@ -594,95 +600,126 @@
 	  value: true
 	});
 	
-	var _loader = __webpack_require__(14);
+	var _base_map = __webpack_require__(9);
+	
+	var _base_map2 = _interopRequireDefault(_base_map);
+	
+	var _choropleth_map = __webpack_require__(10);
+	
+	var _choropleth_map2 = _interopRequireDefault(_choropleth_map);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	  baseMap: _base_map2.default,
+	  choroplethMap: _choropleth_map2.default
+	};
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _d = __webpack_require__(1);
+	
+	var d3 = _interopRequireWildcard(_d);
+	
+	var _loader = __webpack_require__(15);
 	
 	var _loader2 = _interopRequireDefault(_loader);
 	
-	var _prepare = __webpack_require__(16);
+	var _prepare = __webpack_require__(17);
 	
 	var _prepare2 = _interopRequireDefault(_prepare);
 	
-	var _merge_data = __webpack_require__(15);
+	var _merge_data = __webpack_require__(16);
 	
 	var _merge_data2 = _interopRequireDefault(_merge_data);
 	
-	var _get_ready = __webpack_require__(25);
+	var _get_ready = __webpack_require__(26);
 	
 	var _get_ready2 = _interopRequireDefault(_get_ready);
 	
-	var _get_chart_element = __webpack_require__(35);
+	var _get_chart_element = __webpack_require__(36);
 	
 	var _get_chart_element2 = _interopRequireDefault(_get_chart_element);
 	
-	var _fix_dimensions = __webpack_require__(1);
+	var _fix_dimensions = __webpack_require__(2);
 	
 	var _fix_dimensions2 = _interopRequireDefault(_fix_dimensions);
 	
-	var _update_dimensions = __webpack_require__(33);
+	var _update_dimensions = __webpack_require__(34);
 	
 	var _update_dimensions2 = _interopRequireDefault(_update_dimensions);
 	
-	var _get_breakpoints = __webpack_require__(29);
+	var _get_breakpoints = __webpack_require__(30);
 	
 	var _get_breakpoints2 = _interopRequireDefault(_get_breakpoints);
 	
-	var _setup_responsiveness = __webpack_require__(30);
+	var _setup_responsiveness = __webpack_require__(31);
 	
 	var _setup_responsiveness2 = _interopRequireDefault(_setup_responsiveness);
 	
-	var _init_svg = __webpack_require__(37);
+	var _init_svg = __webpack_require__(38);
 	
 	var _init_svg2 = _interopRequireDefault(_init_svg);
 	
-	var _init_g = __webpack_require__(36);
+	var _init_g = __webpack_require__(37);
 	
 	var _init_g2 = _interopRequireDefault(_init_g);
 	
-	var _update_svg = __webpack_require__(34);
+	var _update_svg = __webpack_require__(35);
 	
 	var _update_svg2 = _interopRequireDefault(_update_svg);
 	
-	var _reset_g = __webpack_require__(20);
+	var _reset_g = __webpack_require__(21);
 	
 	var _reset_g2 = _interopRequireDefault(_reset_g);
 	
-	var _get_extent_domain = __webpack_require__(18);
+	var _get_extent_domain = __webpack_require__(19);
 	
 	var _get_extent_domain2 = _interopRequireDefault(_get_extent_domain);
 	
-	var _get_ordinal_domain = __webpack_require__(19);
+	var _get_ordinal_domain = __webpack_require__(20);
 	
 	var _get_ordinal_domain2 = _interopRequireDefault(_get_ordinal_domain);
 	
-	var _get_color = __webpack_require__(13);
+	var _get_color = __webpack_require__(14);
 	
 	var _get_color2 = _interopRequireDefault(_get_color);
 	
-	var _update_breakpoints = __webpack_require__(32);
+	var _update_breakpoints = __webpack_require__(33);
 	
 	var _update_breakpoints2 = _interopRequireDefault(_update_breakpoints);
 	
-	var _update_breakpoint_classes = __webpack_require__(31);
+	var _update_breakpoint_classes = __webpack_require__(32);
 	
 	var _update_breakpoint_classes2 = _interopRequireDefault(_update_breakpoint_classes);
 	
-	var _get_path = __webpack_require__(23);
+	var _get_path = __webpack_require__(24);
 	
 	var _get_path2 = _interopRequireDefault(_get_path);
 	
-	var _get_projection = __webpack_require__(24);
+	var _get_projection = __webpack_require__(25);
 	
 	var _get_projection2 = _interopRequireDefault(_get_projection);
 	
-	var _draw_map = __webpack_require__(21);
+	var _draw_map = __webpack_require__(22);
 	
 	var _draw_map2 = _interopRequireDefault(_draw_map);
 	
-	var _get_geo_data = __webpack_require__(22);
+	var _get_geo_data = __webpack_require__(23);
 	
 	var _get_geo_data2 = _interopRequireDefault(_get_geo_data);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	// geo specific
 	
@@ -791,7 +828,7 @@
 	// import renderAxisLabel from '../../utils/axes/render_axis_label.js'
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -800,11 +837,11 @@
 	  value: true
 	});
 	
-	var _get_choropleth_color = __webpack_require__(12);
+	var _get_choropleth_color = __webpack_require__(13);
 	
 	var _get_choropleth_color2 = _interopRequireDefault(_get_choropleth_color);
 	
-	var _get_legend_items = __webpack_require__(26);
+	var _get_legend_items = __webpack_require__(27);
 	
 	var _get_legend_items2 = _interopRequireDefault(_get_legend_items);
 	
@@ -820,7 +857,7 @@
 	};
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -866,42 +903,48 @@
 	};
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
+	var _d = __webpack_require__(1);
+	
+	var d3 = _interopRequireWildcard(_d);
+	
+	__webpack_require__(29);
+	
 	__webpack_require__(28);
 	
-	__webpack_require__(27);
-	
-	var _template = __webpack_require__(10);
+	var _template = __webpack_require__(11);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
-	var _available_maps = __webpack_require__(7);
+	var _available_maps = __webpack_require__(8);
 	
 	var _available_maps2 = _interopRequireDefault(_available_maps);
 	
-	var _map = __webpack_require__(4);
+	var _map = __webpack_require__(5);
 	
 	var _map2 = _interopRequireDefault(_map);
 	
-	var _get_publics = __webpack_require__(6);
+	var _get_publics = __webpack_require__(7);
 	
 	var _get_publics2 = _interopRequireDefault(_get_publics);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	// init
 	// // FIXME: currently, `d3-playbooks-maps` is currently only standalone
 	
-	/*
-	 * make some stuff public for addons to hook into
-	 */
+	d3.playbooks = {}; /*
+	                    * make some stuff public for addons to hook into
+	                    */
 	
 	// polyfills
-	d3.playbooks = {};
+	
 	d3.playbooks.TEMPLATE = _template2.default;
 	_available_maps2.default.baseChart = _available_maps2.default.baseMap;
 	d3.playbooks.CHARTS = _available_maps2.default;
@@ -949,8 +992,8 @@
 	}
 
 /***/ },
-/* 12 */
-/***/ function(module, exports) {
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -958,12 +1001,12 @@
 	  value: true
 	});
 	
-	/** compute getColor func special for choropleths
-	 *
-	 * @param color -
-	 *  a callable - will just return as is
-	 *  an Array, this will compute a d3 scaleQuantile
-	**/
+	var _d = __webpack_require__(1);
+	
+	var d3 = _interopRequireWildcard(_d);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	exports.default = function (_ref) {
 	  var color = _ref.color,
 	      yDomain = _ref.yDomain;
@@ -971,10 +1014,15 @@
 	  if (typeof color === 'function') return color;else {
 	    return d3.scaleQuantile().domain(yDomain).range(color);
 	  }
-	};
+	}; /** compute getColor func special for choropleths
+	    *
+	    * @param color -
+	    *  a callable - will just return as is
+	    *  an Array, this will compute a d3 scaleQuantile
+	   **/
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1016,7 +1064,7 @@
 	};
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1025,15 +1073,21 @@
 	  value: true
 	});
 	
-	var _promisePolyfill = __webpack_require__(2);
+	var _d = __webpack_require__(1);
+	
+	var d3 = _interopRequireWildcard(_d);
+	
+	var _promisePolyfill = __webpack_require__(3);
 	
 	var _promisePolyfill2 = _interopRequireDefault(_promisePolyfill);
 	
-	var _transform_data = __webpack_require__(17);
+	var _transform_data = __webpack_require__(18);
 	
 	var _transform_data2 = _interopRequireDefault(_transform_data);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	function _loadCsv(dataUrl) {
 	  return new _promisePolyfill2.default(function (resolve, reject) {
@@ -1086,7 +1140,7 @@
 	};
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1158,7 +1212,7 @@
 	};
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1199,7 +1253,7 @@
 	};
 
 /***/ },
-/* 17 */
+/* 18 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1256,8 +1310,8 @@
 	};
 
 /***/ },
-/* 18 */
-/***/ function(module, exports) {
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1279,9 +1333,15 @@
 	    return d[col];
 	  });
 	};
+	
+	var _d = __webpack_require__(1);
+	
+	var d3 = _interopRequireWildcard(_d);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1302,7 +1362,7 @@
 	};
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1325,7 +1385,7 @@
 	};
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1348,7 +1408,7 @@
 	};
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1357,11 +1417,17 @@
 	  value: true
 	});
 	
-	var _promisePolyfill = __webpack_require__(2);
+	var _d = __webpack_require__(1);
+	
+	var d3 = _interopRequireWildcard(_d);
+	
+	var _promisePolyfill = __webpack_require__(3);
 	
 	var _promisePolyfill2 = _interopRequireDefault(_promisePolyfill);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	exports.default = function (_ref) {
 	  var isTopojson = _ref.isTopojson,
@@ -1390,7 +1456,7 @@
 	};
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1406,7 +1472,7 @@
 	};
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1424,7 +1490,7 @@
 	};
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1440,7 +1506,7 @@
 	};
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1471,7 +1537,7 @@
 	};
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1483,7 +1549,7 @@
 	}
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1519,7 +1585,7 @@
 	}
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1544,7 +1610,7 @@
 	};
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1591,7 +1657,7 @@
 	};
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1613,7 +1679,7 @@
 	};
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1653,7 +1719,7 @@
 	};
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1662,7 +1728,7 @@
 	  value: true
 	});
 	
-	var _fix_dimensions = __webpack_require__(1);
+	var _fix_dimensions = __webpack_require__(2);
 	
 	var _fix_dimensions2 = _interopRequireDefault(_fix_dimensions);
 	
@@ -1701,7 +1767,7 @@
 	};
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1721,8 +1787,8 @@
 	};
 
 /***/ },
-/* 35 */
-/***/ function(module, exports) {
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1730,13 +1796,12 @@
 	  value: true
 	});
 	
-	/**
-	 * return element to which a chart will be applied.
-	 * if element not in `document`, it will be created
-	 *
-	 * @param {string} elementId - id of html element
-	 * @param {string} cssNamespace
-	 **/
+	var _d = __webpack_require__(1);
+	
+	var d3 = _interopRequireWildcard(_d);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	exports.default = function (_ref) {
 	  var elementId = _ref.elementId,
 	      cssNamespace = _ref.cssNamespace;
@@ -1748,10 +1813,16 @@
 	  }
 	
 	  return element.append('div').attr('class', cssNamespace + ' ' + cssNamespace + '__wrapper');
-	};
+	}; /**
+	    * return element to which a chart will be applied.
+	    * if element not in `document`, it will be created
+	    *
+	    * @param {string} elementId - id of html element
+	    * @param {string} cssNamespace
+	    **/
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1770,7 +1841,7 @@
 	};
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1806,10 +1877,10 @@
 	};
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(39)();
+	exports = module.exports = __webpack_require__(40)();
 	// imports
 	
 	
@@ -1820,7 +1891,7 @@
 
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports) {
 
 	/*
@@ -1876,7 +1947,7 @@
 
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -2062,7 +2133,7 @@
 
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -2252,10 +2323,10 @@
 	    attachTo.clearImmediate = clearImmediate;
 	}(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(40)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(41)))
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -2507,16 +2578,16 @@
 
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(38);
+	var content = __webpack_require__(39);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(42)(content, {});
+	var update = __webpack_require__(43)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -2533,7 +2604,7 @@
 	}
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var apply = Function.prototype.apply;
@@ -2586,7 +2657,7 @@
 	};
 	
 	// setimmediate attaches itself to the global object
-	__webpack_require__(41);
+	__webpack_require__(42);
 	exports.setImmediate = setImmediate;
 	exports.clearImmediate = clearImmediate;
 

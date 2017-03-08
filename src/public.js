@@ -3,6 +3,7 @@
  */
 
 // polyfills
+import * as d3 from 'd3'
 import './utils/polyfills/object_assign.js'
 import './utils/polyfills/is_array.js'
 

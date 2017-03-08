@@ -1,3 +1,4 @@
+import * as d3 from 'd3'
 import getData from '../../utils/data/loader.js'
 import prepareData from '../../utils/data/prepare.js'
 import mergeData from '../../utils/data/merge_data.js'
@@ -27,7 +28,6 @@ import getPath from '../../utils/geo/get_path.js'
 import getProjection from '../../utils/geo/get_projection.js'
 import drawData from '../../utils/geo/draw_map.js'
 import getGeoData from '../../utils/geo/get_geo_data.js'
-
 
 export default {
   plays: {
