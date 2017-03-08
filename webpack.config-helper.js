@@ -15,7 +15,7 @@ module.exports = options => {
     ],
     output: {
       path: Path.join(__dirname, 'dist'),
-      filename: 'd3-playbooks.maps.min.js'
+      filename: '[name].js'
     },
     plugins: [
       new Webpack.DefinePlugin({
@@ -43,7 +43,10 @@ module.exports = options => {
   }
 
   if (options.isProduction) {
-    webpackConfig.entry = ['./src/main.js']
+    webpackConfig.entry = {
+      'd3-playbooks.maps': './src/main.js',
+      'd3-playbooks.maps.min': './src/main.js'
+    }
 
     // external dependencies
     webpackConfig.externals = {
@@ -54,9 +57,8 @@ module.exports = options => {
     webpackConfig.plugins.push(
       new Webpack.optimize.OccurenceOrderPlugin(),
       new Webpack.optimize.UglifyJsPlugin({
-        compressor: {
-          warnings: false
-        }
+        include: /\.min\.js$/,
+        minimize: true
       })
     )
 
