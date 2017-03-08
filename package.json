@@ -1,5 +1,5 @@
 {
-  "name": "d3-playbooks",
+  "name": "d3-playbooks-maps",
   "version": "0.0.1",
   "description": "A simple wrapper around d3v4, extended with some stuff",
   "main": "dist/d3-playbooks.maps.js",
